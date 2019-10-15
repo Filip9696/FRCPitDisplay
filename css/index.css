@@ -1,0 +1,51 @@
+td, div { font-size: 1.45rem }
+#time-display {
+    display: inline-block;
+    font-size: 2.1rem;
+    margin-right: 15px;
+}
+#rank {
+    display: inline-block;
+    font-size: 2.1rem;;
+    margin-left: 15px;
+}
+#event {
+    display: inline-block;
+    font-size: 2.1rem;;
+    margin-left: 15px;
+}
+.fill-vertical {
+    height: calc(100vh - 66px);
+    margin-bottom: 0;
+}
+.fill-vertical .row { margin: 0 }
+.fill-vertical .col { height: 100% }
+.top-row { height: calc(0.7 * (100vh - 66px)) }
+.bottom-row { height: calc(0.3 * (100vh - 66px)) }
+.bottom-row img { width: 25% }
+.bottom-row .col { display: flex; justify-content: space-around }
+
+td, th { padding: 10px 5px; text-align: center }
+.match .us { font-weight: 700 }
+.match td { border-radius: 0 }
+.match td:nth-child(3), .match td:nth-child(4), .match td:nth-child(5) { background: #ef9a9a }
+.match td:nth-child(6), .match td:nth-child(7), .match td:nth-child(8) { background: #90caf9 }
+.match.red-win td:nth-child(3), .match.red-win td:nth-child(4), .match.red-win td:nth-child(5) { background: #c62828 }
+.match.blue-win td:nth-child(6), .match.blue-win td:nth-child(7), .match.blue-win td:nth-child(8) { background: #1565c0 }
+h2 i {
+    font-size: 2.5rem !important;
+}
+.offline { padding: 0 }
+.offline h2 { margin: 0 }
+nav .input-field {
+    transform: translateY(-2px);
+    margin-left: 5px;
+}
+.select-wrapper input.select-dropdown,.select-wrapper input.select-dropdown:focus { 
+    color: #fff; 
+    border: 0;
+}
+select::-ms-expand {
+    display: none;
+}
+.dropdown-content li > a, .dropdown-content li > span { color: #000 }
