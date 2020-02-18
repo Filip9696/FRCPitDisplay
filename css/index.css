@@ -20,10 +20,10 @@ td, div { font-size: 1.45rem }
 }
 .fill-vertical .row { margin: 0 }
 .fill-vertical .col { height: 100% }
-.top-row { height: calc(0.7 * (100vh - 66px)) }
-.bottom-row { height: calc(0.3 * (100vh - 66px)) }
-.bottom-row img { width: 25% }
+.top-row { height: calc(0.71 * (100vh - 66px)) }
+.bottom-row { height: calc(0.29 * (100vh - 66px)) }
 .bottom-row .col { display: flex; justify-content: space-around }
+#player { margin-top: -1px }
 
 td, th { padding: 10px 5px; text-align: center }
 .match .us { font-weight: 700 }
@@ -49,3 +49,7 @@ select::-ms-expand {
     display: none;
 }
 .dropdown-content li > a, .dropdown-content li > span { color: #000 }
+
+.row .col {
+    padding: 0;
+}

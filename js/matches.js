@@ -4,7 +4,7 @@ function generateMatches(update) {
     getMatches().then(json => {
         if (json.length < 1) {
             m.innerHTML = '<tr><td colspan=9 class="center"><h3>Matches Unavailible</h3></td></tr><tr><td colspan=9 class="center"><h5>Matches will be set before the opening ceremony</h5></td></tr>';
-            console.log('Matches not yet set'); // This is an example of bad programming practice in js/html. I apologize for my sin and hope someone else will be not lazy enough to fix it.
+            console.log('Matches not yet set');
             return;
         }
         // Get current match to calc eta
@@ -30,7 +30,7 @@ function generateMatches(update) {
                 }
             });
             // Remove matches under 10
-            json = json.filter((value, index, arr) => {
+            json = json.filter((value) => {
                 return value.match_number > 9; // die
             });
             // Add matches under 10 back
@@ -101,7 +101,6 @@ function generateMatches(update) {
             if (!m.innerHTML.includes('offline')) m.innerHTML += '<tr><td colspan=9 class="center offline"><h2><i class="material-icons">offline_bolt</i></h2></td></tr>';
         } else {
             m.innerHTML = '<tr><td colspan=9 class="center"><h3>Matches Unavailible</h3></td></tr><tr><td colspan=9 class="center"><i class="material-icons">error</i> '+err.message+'</td></tr>';
-            // More sins I've committed
         }
         console.error(err);
     });
